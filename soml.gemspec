@@ -7,8 +7,9 @@ Gem::Specification.new do |spec|
     spec.version  = SOML::VERSION
     spec.author   = 'crdx'
     spec.license  = 'MIT'
+
     spec.files    = Dir['lib/**/*']
 
-    spec.add_development_dependency 'rake', '~> 12.3'
     spec.add_development_dependency 'rspec', '~> 3.8'
+    spec.add_development_dependency 'rake',  '~> 12.3'
 end
