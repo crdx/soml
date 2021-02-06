@@ -1,5 +1,5 @@
 _help:
-    @just --list
+    @just --list --unsorted
 
 # build gem
 build:
