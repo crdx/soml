@@ -20,3 +20,7 @@ release:
 # run tests
 test:
     bundle exec rspec
+
+# run linter
+lint:
+    rubocop

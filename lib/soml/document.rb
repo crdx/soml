@@ -34,6 +34,7 @@ module SOML
                     state.value << line
                 else
                     next if line.strip[0] == '#'
+
                     state.key, value = line.strip.split(' ', 2)
                     if value =~ /<<(.*)/
                         in_field = true

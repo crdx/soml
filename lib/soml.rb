@@ -5,6 +5,6 @@ require_relative 'soml/field'
 
 module SOML
     def self.root_dir
-        File.expand_path('../..', __FILE__)
+        File.expand_path('..', __dir__)
     end
 end

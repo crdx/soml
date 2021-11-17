@@ -1,13 +1,13 @@
 require 'soml'
 
 describe SOML do
-    let (:singleline_document) {
+    let (:singleline_document) do
         <<~EOF
             Field1 123
         EOF
-    }
+    end
 
-    let (:multiline_document) {
+    let (:multiline_document) do
         <<~EOF
             Lyric1 Never
             Lyric2 Gonna
@@ -15,9 +15,9 @@ describe SOML do
             Lyric4 You
             Lyric5 Up
         EOF
-    }
+    end
 
-    let (:multiline_field_document) {
+    let (:multiline_field_document) do
         <<~EOD
             Field1 <<EOF
                 Hello
@@ -26,15 +26,15 @@ describe SOML do
             Field2 Hello
             Field3 world
         EOD
-    }
+    end
 
-    let (:singleline_multiline_field_document) {
+    let (:singleline_multiline_field_document) do
         <<~EOS
             Field1 <<EOF
                 Just one line here
             EOF
         EOS
-    }
+    end
 
     it 'parses a single-line document' do
         document = SOML::Document.parse(singleline_document)

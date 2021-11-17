@@ -1,6 +1,7 @@
 module SOML
     class Field
-        attr_reader :name, :value
+        attr_reader :name
+        attr_reader :value
 
         def initialize(name, value)
             @name = name
@@ -8,7 +9,7 @@ module SOML
         end
 
         def to_s
-            if is_multi_line?
+            if multi_line?
                 to_multi_line
             else
                 to_single_line
@@ -17,7 +18,7 @@ module SOML
 
         private
 
-        def is_multi_line?
+        def multi_line?
             @value.to_s.include?("\n")
         end
 
