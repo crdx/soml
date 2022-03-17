@@ -1,6 +1,6 @@
 # SOML
 
-SOML is a simple output format intended to be readable but parseable. The primary goal is to keep long multiline strings readable when displayed next to simple values. A familiar heredoc-like syntax delimits the lengthy output.
+**SOML** is a simple output format intended to be readable but parseable. The primary goal is to keep long multiline strings readable when displayed next to simple values. A familiar heredoc-like syntax delimits the lengthy output.
 
 ## `SOML::Document`
 
