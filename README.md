@@ -16,4 +16,4 @@ Open an [issue](https://github.com/crdx/soml/issues) or send a [pull request](ht
 
 ## Licence
 
-[MIT](LICENCE.md).
+[GPLv3](LICENCE).
