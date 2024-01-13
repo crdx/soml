@@ -1,7 +1,9 @@
+set quiet
+
 import? 'internal.just'
 
 [private]
-@help:
+help:
     just --list --unsorted
 
 # build gem
