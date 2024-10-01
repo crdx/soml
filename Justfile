@@ -1,6 +1,6 @@
 set quiet := true
 
-import? 'internal.just'
+import? 'local.just'
 
 [private]
 help:
